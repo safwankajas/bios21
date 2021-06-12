@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+html,body{
+    padding: 0px;
+    margin: 0px;
+    background: rgb(54,53,53); 
+    font-size: 15px;
+    font-family: "ubuntu",sans-serif;
+}
+
+#terminal{
+    position: relative;
+    height: 40vh;
+    width: 500px;
+    background-color: #000;
+    margin: 150px auto;
+    border-radius: 14px;
+    box-shadow: 1px 2px 26px rgb(0, 0, 0,0.3);
+}
+#terminal #header{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: lightgray;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+    
+   
+#terminal #header span{
+    position:absolute;
+    height: 22px;
+    width: 22px;
+
+    background: none;
+    border-radius: 50%;
+    box-shadow: 1px 2px 20px rgb(0, 0, 0,0.3);
+}
+#terminal #header span:nth-child(1){
+    background-color: red;
+    top: 15px;
+    left: 7px;
+}
+#terminal #header span:nth-child(2){
+    background-color: orange;
+    top: 15px;
+    left: 45px;
+}
+#terminal #header span:nth-child(3){
+    background-color: green;
+    top: 15px;
+    left: 84px;
+}
+#terminal #header h1
+{
+    position: absolute;
+    top: 7px;
+    font-size: 16px;
+    left: 180px;
+}
+#terminal #body{
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+
+}
+#terminal #body p{
+    
+    color: green;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+#terminal #body #txt{
+position: absolute;
+height: 50px;
+width: 100%;
+background: #000;
+top: 20px;
+left: 0px;
+animation: type 5s ease-in-out 1 forwards;
+}
+#teminal #body p span{
+    font-size: 28px;
+    animation: blink .4s ease-in infinite;
+
+
+}
+/* ----------------animation  -------------   */
+@keyframes type {
+    to{
+        left: 400px;
+    }
+    
+}
+@keyframes blink {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.6;
+    }
+    100%{
+        opacity:1;
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #terminal{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+ #terminal #header h1
+{
+    
+    top: 7px;
+    font-size: 16px;
+    left: 120px;
+}
+}
